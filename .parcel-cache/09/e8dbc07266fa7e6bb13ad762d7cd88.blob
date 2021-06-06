@@ -1,0 +1,19 @@
+let demo = document.querySelector('#demo')
+let string = `
+大家好，我是一名前端小白
+这是我第一个作业
+加样式
+`
+string = string.replace(/\n/g,"<br>")
+let n = 0
+demo.innerHTML = string.substring(0, n)
+
+let step = () => {
+    setTimeout() => ({
+        n = n + 1
+        demo.innerHTML = string.substring(0, n)
+        if (n < string.length) {
+           step() 
+        }else{}   
+    },400)
+}

@@ -1,0 +1,7 @@
+let demo = document.querySelector('#demo')
+let string = `
+大家好，我是一名前端小白
+这是我第一个作业
+加样式
+`
+let step = 
